@@ -1,0 +1,347 @@
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bright Computer Institute</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f7fb;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background: #082c5c;
+            color: white;
+            padding: 18px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header h2 {
+            font-size: 26px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 430px;
+            padding: 70px 7%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+            flex-wrap: wrap;
+            background: linear-gradient(120deg, #082c5c, #0879c9);
+            color: white;
+        }
+
+        .hero-content {
+            flex: 1;
+            min-width: 280px;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #ffcc00;
+            color: #082c5c;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .hero-image {
+            flex: 1;
+            min-width: 260px;
+            text-align: center;
+            font-size: 120px;
+        }
+
+        /* Common Sections */
+        section {
+            padding: 55px 7%;
+        }
+
+        .section-title {
+            text-align: center;
+            color: #082c5c;
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+
+        /* About */
+        .about {
+            text-align: center;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        /* Courses */
+        .courses {
+            background: white;
+        }
+
+        .course-container {
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(220px, 1fr));
+            gap: 22px;
+        }
+
+        .course-card {
+            background: #f4f7fb;
+            padding: 25px 20px;
+            border-radius: 10px;
+            text-align: center;
+            border-bottom: 4px solid #0879c9;
+            box-shadow: 0 4px 12px #00000010;
+        }
+
+        .course-card h3 {
+            color: #082c5c;
+            margin: 12px 0;
+        }
+
+        .course-icon {
+            font-size: 42px;
+        }
+
+        /* Features */
+        .features {
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            text-align: center;
+        }
+
+        .feature {
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+        }
+
+        .feature h3 {
+            color: #0879c9;
+            margin-bottom: 8px;
+        }
+
+        /* Contact */
+        .contact {
+            background: #e5effa;
+            text-align: center;
+        }
+
+        .contact p {
+            margin: 10px 0;
+        }
+
+        /* Footer */
+        footer {
+            background: #082c5c;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Mobile Menu Layout */
+        @media (max-width: 600px) {
+            header {
+                justify-content: center;
+                gap: 12px;
+            }
+
+            nav {
+                text-align: center;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px 7px;
+                font-size: 14px;
+            }
+
+            .hero {
+                padding: 50px 7%;
+                text-align: center;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .hero-image {
+                font-size: 80px;
+            }
+
+            .section-title {
+                font-size: 27px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h2>💻 Bright Computer</h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#courses">Courses</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <div class="hero" id="home">
+        <div class="hero-content">
+            <h1>Welcome to Bright Computer Institute</h1>
+
+            <p>
+                Learn Computer Skills, Build Your Future!
+                Professional computer education with practical training.
+            </p>
+
+            <a href="#courses" class="btn">Explore Courses</a>
+            <a href="#contact" class="btn">Contact Us</a>
+        </div>
+
+        <div class="hero-image">🖥️</div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="section-title">About Our Institute</h2>
+
+        <div class="about">
+            <p>
+                Bright Computer Institute mein aapko computer ki
+                basic se advanced level tak training di jaati hai.
+                Hamara focus practical knowledge, skilled teachers
+                aur career-oriented computer education par hai.
+            </p>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="courses" id="courses">
+        <h2 class="section-title">Our Popular Courses</h2>
+
+        <div class="course-container">
+
+            <div class="course-card">
+                <div class="course-icon">⌨️</div>
+                <h3>Basic Computer</h3>
+                <p>Computer fundamentals, typing, internet aur email.</p>
+            </div>
+
+            <div class="course-card">
+                <div class="course-icon">📊</div>
+                <h3>ADCA</h3>
+                <p>Office applications, computer concepts aur practical skills.</p>
+            </div>
+
+            <div class="course-card">
+                <div class="course-icon">📈</div>
+                <h3>Tally with GST</h3>
+                <p>Accounting, billing aur GST ki practical training.</p>
+            </div>
+
+            <div class="course-card">
+                <div class="course-icon">🌐</div>
+                <h3>Web Designing</h3>
+                <p>HTML, CSS aur website designing seekhein.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section>
+        <h2 class="section-title">Why Choose Us?</h2>
+
+        <div class="features">
+            <div class="feature">
+                <h3>Expert Teachers</h3>
+                <p>Guidance aur practical learning.</p>
+            </div>
+
+            <div class="feature">
+                <h3>Practical Classes</h3>
+                <p>Computer par hands-on practice.</p>
+            </div>
+
+            <div class="feature">
+                <h3>Affordable Fees</h3>
+                <p>Students ke liye budget-friendly courses.</p>
+            </div>
+
+            <div class="feature">
+                <h3>Career Support</h3>
+                <p>Skills aur career development par focus.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2 class="section-title">Contact Us</h2>
+
+        <p><strong>Address:</strong> Apna Institute Address Yahan Likhein</p>
+        <p><strong>Mobile:</strong> +91 XXXXXXXXXX</p>
+        <p><strong>Email:</strong> info@example.com</p>
+
+        <br>
+
+        <a href="tel:+91XXXXXXXXXX" class="btn">
+            Call Now
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            &copy; 2026 Bright Computer Institute.
+            All Rights Reserved.
+        </p>
+    </footer>
+
+</body>
+</html>
